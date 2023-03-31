@@ -51,6 +51,7 @@ void load_xiaomi_munch() {
     property_override("ro.product.device", "munch");
     property_override("ro.product.manufacturer", "Xiaomi");
     property_override("ro.product.model", "22021211RC");
+    property_override("ro.product.mod_device", "munch_global");
     property_override("ro.product.name", "munch");
 }
 
@@ -60,6 +61,7 @@ void load_xiaomi_munch_global() {
     property_override("ro.product.device", "munch");
     property_override("ro.product.manufacturer", "Xiaomi");
     property_override("ro.product.model", "22021211RG");
+    property_override("ro.product.mod_device", "munch_global");
     property_override("ro.product.name", "munch");
 }
 
@@ -69,6 +71,7 @@ void load_xiaomi_munch_in() {
     property_override("ro.product.device", "munch");
     property_override("ro.product.manufacturer", "Xiaomi");
     property_override("ro.product.model", "22021211RI");
+    property_override("ro.product.mod_device", "munch_in_global");
     property_override("ro.product.name", "munch");
 }
 
