@@ -285,6 +285,9 @@ PRODUCT_PACKAGES += \
     update_engine_sideload \
     update_verifier
 
+# USB
+PRODUCT_HAS_GADGET_HAL := true
+
 # Vendor
 $(call inherit-product, vendor/xiaomi/munch/munch-vendor.mk)
 
