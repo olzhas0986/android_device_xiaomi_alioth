@@ -93,7 +93,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libpiex_shim \
-    libutilscallstack.vendor
+    libutilscallstack.vendor \
+    liblz4.vendor
 
 # Consumer IR
 PRODUCT_COPY_FILES += \
