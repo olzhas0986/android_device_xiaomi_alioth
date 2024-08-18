@@ -149,6 +149,9 @@ PRODUCT_PACKAGES += \
     libcodec2_soft_common.vendor \
     libsfplugin_ccodec_utils.vendor
 
+# Memtrack
+TARGET_USE_AIDL_QTI_MEMTRACK := true
+
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
