@@ -114,16 +114,6 @@ vendor/lib/hw/audio.primary.kona.so|298ba71b40039372880659fc13757842c824ce95
 vendor/lib/hw/sound_trigger.primary.kona.so|3cb9194c857e71acea11d09dd06b14cad4e286bd
 vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so|ee89b7cb4e0476688ac8c1a669dfe89c660b1a76
 vendor/lib/vndk/libxlog.so|dad5169deb3296ca1ff4d7e9546e4229cda277b9
-vendor/lib/libOmxAacDec.so|8ce59e66ecdaef344782adfcefed275478414726
-vendor/lib/libOmxAlacDec.so|85beb430bfdb9579de6c9526616399e457db0d59
-vendor/lib/libOmxAmrDec.so|f91f28006bf40f08f49e4cf877852b28429390b1
-vendor/lib/libOmxAmrwbplusDec.so|148883e95ef3e909809412f91697aa7fe71ed8fd
-vendor/lib/libOmxApeDec.so|cef92e3821396c34c1fb592e7f55a78daa29459e
-vendor/lib/libOmxDsdDec.so|f74936badeb8303b2bb17475b9cd157b1c81131c
-vendor/lib/libOmxEvrcDec.so|827e34f3068a733c39772d46f3757e42e21975c9
-vendor/lib/libOmxG711Dec.so|7f6236caaa675dd9907e404db60b741d9f0fbc52
-vendor/lib/libOmxQcelp13Dec.so|44698fe731f52e64f4646c6262c9b4adba3d807b
-vendor/lib/libOmxWmaDec.so|0e3f7aefc88bacbe52b2a88d3a704bb023490874
 vendor/lib/liba2dpoffload.so|317d0142a79daad06d536b0dd19d89c72a087a37
 vendor/lib/libacdb-fts.so|de42077295d158fa4ac0dd58a1f92aae7ab543c9
 vendor/lib/libacdbloader.so|60c34bc8fcdc24eecdbecc1bc5aee3f9c1ac1066
@@ -141,7 +131,6 @@ vendor/lib/libcapiv2svacnn.so|c897fbba664fcb0ea1951d3220d8db54ae0d7995
 vendor/lib/libcapiv2svarnn.so|97f6bd6b25479fbf0f4f7cb06d9f1a462266f22a
 vendor/lib/libcapiv2vop.so|1cceaefcc1ca55de5bc932a846091e6702c5d508
 vendor/lib/libdrc.so|b066f176f119847059c5aa148f73e1b042fbeab3
-vendor/lib/libdsd2pcm.so|c5ab1afd7a5a23bf83d80b5ac74247c3dd2085af
 vendor/lib/libgcs-calwrapper.so|450f46824bc4382609367022f426d547b26aefad
 vendor/lib/libgcs-ipc.so|1e5e00a2f2ea7f426e3de34e60629c6b8376787d
 vendor/lib/libgcs-osal.so|9f023437197fd01fdadd61844ba0bff88dc8d6a4

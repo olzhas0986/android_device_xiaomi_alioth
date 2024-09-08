@@ -154,6 +154,11 @@ PRODUCT_PACKAGES += \
     libcodec2_soft_common.vendor \
     libsfplugin_ccodec_utils.vendor
 
+TARGET_SUPPORTS_OMX_SERVICE := false
+
+PRODUCT_VENDOR_PROPERTIES += \
+    vendor.media.omx=0
+
 # Memtrack
 TARGET_USE_AIDL_QTI_MEMTRACK := true
 
