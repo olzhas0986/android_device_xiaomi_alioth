@@ -56,6 +56,9 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        vendor/etc/seccomp_policy/atfwd@2.0.policy)
+            grep -q 'gettid: ' "${2}" || echo 'gettid: 1' >> "${2}"
+            ;;
         vendor/lib64/camera/components/com.mi.node.watermark.so )
             $PATCHELF --add-needed "libpiex_shim.so" "${2}"
             ;;
