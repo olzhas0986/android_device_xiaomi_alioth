@@ -160,15 +160,6 @@ vendor/lib/vendor.qti.voiceprint@1.0.so|5325739853aef4d9b7a752cec9e607e4f7e86ebf
 vendor/lib64/hw/audio.primary.kona.so|5a09dfd25711371e6e9417c4b98d93ad763a7243
 vendor/lib64/hw/sound_trigger.primary.kona.so|4b40d952dc481e7b1d7922820df58e9038d910c3
 vendor/lib64/hw/vendor.qti.hardware.audiohalext@1.0-impl.so|0f59ee3a875a9b01610d324bc95a1bc61f51edc0
-vendor/lib64/libOmxAacDec.so|5b756d7815ce658ba5a2b3ac2d72bba90c75520e
-vendor/lib64/libOmxAlacDec.so|5a1921c5735c6a41419354df5954ad65dba029a1
-vendor/lib64/libOmxAmrDec.so|960bf5522f8ece40640aa0de80b81c4cb19ce5e4
-vendor/lib64/libOmxAmrwbplusDec.so|128b3e2f6dc10ba751edd117d7e1d8ab7a4ac5fc
-vendor/lib64/libOmxApeDec.so|726d9dc19b94c83be6c769e6ea814ebc81021993
-vendor/lib64/libOmxEvrcDec.so|a793c523f124535ae7591fe76ca6f2eba3f38d8f
-vendor/lib64/libOmxG711Dec.so|a2f9cb6f9eab5179f1afe8e24018497d19b8ddd7
-vendor/lib64/libOmxQcelp13Dec.so|d3d11987b8dc3c6605ed79b7f34537a325dfbf79
-vendor/lib64/libOmxWmaDec.so|181f85d2f440c49a44573229cbc3c462cc52eccd
 
 # Audio FX - HyperOS
 vendor/lib/soundfx/libasphere.so|b2daeb875914a33575c7d7a67429f25d09d35489
