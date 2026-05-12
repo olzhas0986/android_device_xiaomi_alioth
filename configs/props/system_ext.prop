@@ -8,5 +8,8 @@ persist.vendor.btstack.enable.swbpm=false
 persist.vendor.btstack.enable.twsplus=true
 persist.vendor.btstack.enable.twsplussho=true
 
+# NFC Config
+persist.nfc_cfg.config_file_name=libnfc-nci.conf
+
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
