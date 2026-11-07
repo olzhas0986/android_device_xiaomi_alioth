@@ -40,73 +40,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.device_id_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_id_attestation.xml
 
 # Audio
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.vendor.audio.delta.refresh=true \
-    persist.vendor.audio.misound.disable=true \
-    persist.vendor.audio.ring.filter.mask=0 \
-    ro.audio.monitorRotation=true \
-    ro.config.vc_call_vol_steps=11 \
-    ro.vendor.audio.enhance.support=false \
-    ro.vendor.audio.gain.support=true \
-    ro.vendor.audio.karaok.support=true \
-    ro.vendor.audio.ns.support=false \
-    ro.vendor.audio.scenario.support=true \
-    ro.vendor.audio.soundfx.type=mi \
-    ro.vendor.audio.soundfx.usb=true \
-    ro.vendor.audio.support.sound.id=true \
-    ro.vendor.audio.us.proximity=true \
-    vendor.audio.spkcal.copy.inhal=true \
-    vendor.audio.usb.disable.sidetone=true
-
-PRODUCT_ODM_PROPERTIES += \
-    aaudio.mmap_policy=1 \
-    ro.vendor.audio.sdk.fluencetype=fluence \
-    ro.vendor.audio.soundtrigger=sva \
-    ro.vendor.audio.soundtrigger.pangaea=1 \
-    ro.vendor.audio.soundtrigger.sva-5.0=1 \
-    ro.vendor.audio.soundtrigger.xiaomievent=1 \
-    vendor.audio.adm.buffering.ms=6 \
-    vendor.audio.feature.dynamic_ecns.enable=false \
-    vendor.audio.feature.spkr_prot.enable=false \
-    vendor.audio.hal.output.suspend.supported=false \
-    vendor.audio.offload.buffer.size.kb=32 \
-    vendor.audio.offload.multiple.enabled=true \
-    vendor.audio.offload.track.enable=false \
-    vendor.audio_hal.period_multiplier=3
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     $(LOCAL_PATH)/configs/audio/mixer_paths_overlay_static.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_overlay_static.xml \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_policy_configuration.xml
-
-# Bluetooth
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.sys.fflag.override.settings_bluetooth_hearing_aid=true \
-    persist.vendor.qcom.bluetooth.a2dp_mcast_test.enabled=false \
-    persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptiver2 \
-    persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true \
-    persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=true \
-    persist.vendor.qcom.bluetooth.aptxadaptiver2_1_support=false \
-    persist.vendor.qcom.bluetooth.enable.splita2dp=true \
-    persist.vendor.qcom.bluetooth.enable.swb=false \
-    persist.vendor.qcom.bluetooth.enable.swbpm=false \
-    persist.vendor.qcom.bluetooth.scram.enabled=false \
-    persist.vendor.qcom.bluetooth.soc=hastings \
-    persist.vendor.qcom.bluetooth.twsp_state.enabled=false \
-    ro.vendor.bluetooth.wipower=false \
-    vendor.bluetooth.soc=hastings \
-    vendor.hw.fm.init=0 \
-    vendor.qcom.bluetooth.soc=hastings
-
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    persist.vendor.btstack.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptiver2-aac-ldac \
-    persist.vendor.btstack.connect.peer_earbud=true \
-    persist.vendor.btstack.enable.lpa=true \
-    persist.vendor.btstack.enable.splita2dp=true \
-    persist.vendor.btstack.enable.swb=false \
-    persist.vendor.btstack.enable.swbpm=false \
-    persist.vendor.btstack.enable.twsplus=true \
-    persist.vendor.btstack.enable.twsplussho=true
 
 # Boot
 PRODUCT_PACKAGES += \
@@ -115,9 +52,6 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-service
 
 # Camera
-PRODUCT_VENDOR_PROPERTIES += \
-    camera.disable_zsl_mode=true
-
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
     frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
@@ -139,14 +73,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libpiex_shim
 
-# Charging
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.vendor.cp.fcc_main_ua=400000 \
-    persist.vendor.cp.taper_term_mv=7000 \
-    persist.vendor.cp.qc3p5_vfloat_offset_uv=110000 \
-    persist.vendor.pps.disallowed=1 \
-    persist.vendor.hvdcp_opti.disallowed=1
-
 # Consumer IR
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
@@ -159,29 +85,10 @@ PRODUCT_PACKAGES += \
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
 # Display
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.vendor.display.paneltype=2 \
-    ro.vendor.display.sensortype=2 \
-    vendor.display.qdcm.mode_combine=1 \
-    vendor.display.defer_fps_frame_count=2
-
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.surface_flinger.set_idle_timer_ms=1000 \
-    ro.surface_flinger.set_touch_timer_ms=1000 \
-    ro.surface_flinger.set_display_power_timer_ms=1000 \
-    ro.surface_flinger.use_content_detection_for_refresh_rate=true
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/displayconfig/display_id_4630946736638489729.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946736638489729.xml
 
-# DPM
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.vendor.dpmhalservice.enable=1
-
 # DRM
-PRODUCT_VENDOR_PROPERTIES += \
-    drm.service.enabled=true
-
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey
 
@@ -195,20 +102,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/fingerprint/uinput-fpc.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/uinput-fpc.idc \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
-# FRP
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.frp.pst=/dev/block/bootdevice/by-name/frp
-
-# Gatekeeper
-PRODUCT_VENDOR_PROPERTIES += \
-    vendor.gatekeeper.disable_spu=true
-
-# Gboard paddings
-# Keyboard height ratio and bottom padding in dp for portrait mode
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.com.google.ime.height_ratio=1.075 \
-    ro.com.google.ime.kb_pad_port_b=8
-
 # Init
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
@@ -221,12 +114,6 @@ PRODUCT_PACKAGES += \
     init.qti.dcvs.sh \
     init.target.rc \
     ueventd.munch.rc
-
-# Keymaster
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.crypto.allow_encrypt_override=true \
-    ro.crypto.volume.filenames_mode="aes-256-cts" \
-    ro.hardware.keystore_desede=true
 
 # Lineage Health
 PRODUCT_PACKAGES += \
@@ -270,14 +157,6 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 # Platform
 TARGET_BOARD_PLATFORM := kona
 
-# QCRIL
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.vendor.radio.cdma_cap=true \
-    persist.vendor.radio.data_con_rprt=1 \
-    persist.vendor.radio.data_ltd_sys_ind=1 \
-    persist.vendor.radio.force_ltd_sys_ind=1 \
-    persist.vendor.radio.manual_nw_rej_ct=1
-
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := \
     adreno \
@@ -299,13 +178,6 @@ TARGET_COMMON_QTI_COMPONENTS := \
     wlan
 
 # Sensors
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.vendor.sensors.allow_non_default_discovery=true \
-    persist.vendor.sensors.sync_request=true
-
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    persist.vendor.sensors.enable.mag_filter=true
-
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.accelerometer.xml \
     frameworks/native/data/etc/android.hardware.sensor.compass.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.sensor.compass.xml \
@@ -325,25 +197,6 @@ PRODUCT_PACKAGES += \
 
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 30
-
-# SoC Property
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.soc.model=SM8250
-
-# Storage
-PRODUCT_VENDOR_PROPERTIES += \
-    ro.incremental.enable=yes
-
-PRODUCT_PRODUCT_PROPERTIES += \
-    persist.sys.fuse.passthrough.enable=true
-
-# Subsystem silent restart
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.vendor.ssr.restart_level=ALL_ENABLE
-
-# Thermal
-PRODUCT_VENDOR_PROPERTIES += \
-    vendor.sys.thermal.data.path=/data/vendor/thermal/
 
 # Update Engine
 PRODUCT_PACKAGES += \

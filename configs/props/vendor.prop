@@ -1,0 +1,95 @@
+# Audio
+persist.vendor.audio.delta.refresh=true
+persist.vendor.audio.misound.disable=true
+persist.vendor.audio.ring.filter.mask=0
+ro.audio.monitorRotation=true
+ro.config.vc_call_vol_steps=11
+ro.vendor.audio.enhance.support=false
+ro.vendor.audio.gain.support=true
+ro.vendor.audio.karaok.support=true
+ro.vendor.audio.ns.support=false
+ro.vendor.audio.scenario.support=true
+ro.vendor.audio.soundfx.type=mi
+ro.vendor.audio.soundfx.usb=true
+ro.vendor.audio.support.sound.id=true
+ro.vendor.audio.us.proximity=true
+vendor.audio.spkcal.copy.inhal=true
+vendor.audio.usb.disable.sidetone=true
+
+# Bluetooth
+persist.sys.fflag.override.settings_bluetooth_hearing_aid=true
+persist.vendor.qcom.bluetooth.a2dp_mcast_test.enabled=false
+persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptiver2
+persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
+persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=true
+persist.vendor.qcom.bluetooth.aptxadaptiver2_1_support=false
+persist.vendor.qcom.bluetooth.enable.splita2dp=true
+persist.vendor.qcom.bluetooth.enable.swb=false
+persist.vendor.qcom.bluetooth.enable.swbpm=false
+persist.vendor.qcom.bluetooth.scram.enabled=false
+persist.vendor.qcom.bluetooth.soc=hastings
+persist.vendor.qcom.bluetooth.twsp_state.enabled=false
+ro.vendor.bluetooth.wipower=false
+vendor.bluetooth.soc=hastings
+vendor.hw.fm.init=0
+vendor.qcom.bluetooth.soc=hastings
+
+# Camera
+camera.disable_zsl_mode=true
+
+# Charging
+persist.vendor.cp.fcc_main_ua=400000
+persist.vendor.cp.taper_term_mv=7000
+persist.vendor.cp.qc3p5_vfloat_offset_uv=110000
+persist.vendor.pps.disallowed=1
+persist.vendor.hvdcp_opti.disallowed=1
+
+# Display
+ro.vendor.display.paneltype=2
+ro.vendor.display.sensortype=2
+vendor.display.qdcm.mode_combine=1
+vendor.display.defer_fps_frame_count=2
+ro.surface_flinger.set_idle_timer_ms=1000
+ro.surface_flinger.set_touch_timer_ms=1000
+ro.surface_flinger.set_display_power_timer_ms=1000
+ro.surface_flinger.use_content_detection_for_refresh_rate=true
+
+# DPM
+persist.vendor.dpmhalservice.enable=1
+
+# DRM
+drm.service.enabled=true
+
+# FRP
+ro.frp.pst=/dev/block/bootdevice/by-name/frp
+
+# Gatekeeper
+vendor.gatekeeper.disable_spu=true
+
+# Keymaster
+ro.crypto.allow_encrypt_override=true
+ro.crypto.volume.filenames_mode=aes-256-cts
+ro.hardware.keystore_desede=true
+
+# QCRIL
+persist.vendor.radio.cdma_cap=true
+persist.vendor.radio.data_con_rprt=1
+persist.vendor.radio.data_ltd_sys_ind=1
+persist.vendor.radio.force_ltd_sys_ind=1
+persist.vendor.radio.manual_nw_rej_ct=1
+
+# Sensors
+persist.vendor.sensors.allow_non_default_discovery=true
+persist.vendor.sensors.sync_request=true
+
+# SoC Property
+ro.soc.model=SM8250
+
+# Storage
+ro.incremental.enable=yes
+
+# Subsystem silent restart
+persist.vendor.ssr.restart_level=ALL_ENABLE
+
+# Thermal
+vendor.sys.thermal.data.path=/data/vendor/thermal/

@@ -1,0 +1,15 @@
+# Audio
+aaudio.mmap_policy=1
+ro.vendor.audio.sdk.fluencetype=fluence
+ro.vendor.audio.soundtrigger=sva
+ro.vendor.audio.soundtrigger.pangaea=1
+ro.vendor.audio.soundtrigger.sva-5.0=1
+ro.vendor.audio.soundtrigger.xiaomievent=1
+vendor.audio.adm.buffering.ms=6
+vendor.audio.feature.dynamic_ecns.enable=false
+vendor.audio.feature.spkr_prot.enable=false
+vendor.audio.hal.output.suspend.supported=false
+vendor.audio.offload.buffer.size.kb=32
+vendor.audio.offload.multiple.enabled=true
+vendor.audio.offload.track.enable=false
+vendor.audio_hal.period_multiplier=3
