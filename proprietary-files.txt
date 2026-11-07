@@ -86,7 +86,6 @@ vendor/etc/audio_policy_engine_stream_volumes_mi.xml:vendor/etc/audio_policy_eng
 vendor/etc/audio_configs.xml|eb74ffb11b3b5190bb8070f84de0798ed53ebc87
 vendor/etc/audio_configs_stock.xml|0bd072df25ff1641701bf9fa066bdfefd3b52565
 vendor/etc/audio_effects.conf|49e00ca08a1cc3688d2f88bbf67fae5a5ebeabb4
-vendor/etc/audio_effects.xml|1c693ab0f2b0838c434ea6e36d304c7b1f15c28d
 vendor/etc/audio_io_policy.conf|2b38e2a34de25c2da90cba29851da3b33b42327a
 vendor/etc/audio_platform_info.xml|cbbe1bc50e43aa18f67a726a773c9f32549da609
 vendor/etc/audio_platform_info_intcodec.xml|e3a441c42d8f3ef757761953e67f31545442f765
@@ -835,26 +834,6 @@ vendor/bin/ks|2bcc675556cd146a8a785145f9d2caa1b659b185
 vendor/bin/mdm_helper_proxy|e7ba5764336a32454e4f8de6ff3e1a9c9c2a61bd
 vendor/bin/mdm_helper|aeb8aad56538231d57b7e945c918da39f0c19941
 vendor/lib64/libmdmimgload.so|5f9a20c24dd7f981eec4618769ef74ade0704d54
-
-# Media (Dolby) - HyperOS
-vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service|a5b407c13dc7348ce9d66ff71b22063fde803110
-vendor/etc/dolby/dax-default.xml|43f0a8963c1817a8822ab16706679aa37ebdca0f
-vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc|29296ebfe89b2697fec573be73cc3757fd97bed6
-vendor/etc/vintf/manifest/manifest_vendor.dolby.hardware.dms.xml|c8095f649de19b80271fb429b4b6b439297a0678
-vendor/etc/media_codecs_dolby_audio.xml|a794eb15fc198d0285510260025cd99b53fa174f
-vendor/lib/soundfx/libhwdap.so|5b3ab1b5156745830eda6bc47cc0389514dc2f18
-vendor/lib/soundfx/libswgamedap.so|572735416a195e5a02451948f8c83a8b96363f41
-vendor/lib/soundfx/libswvqe.so|0a6a1f82e38324b7b8d53ccd6dd8f58346969741
-vendor/lib/libdapparamstorage.so|da1ee55c70a51c820f796ad1663e28b465304e2e
-vendor/lib/libdeccfg.so|534f6e22e5c2d9201f5a45647ad2dd2b0c0c39e7
-vendor/lib/libstagefright_soft_ac4dec.so|474aed21d4865285ebb293ad92bdb788f8988f25
-vendor/lib/libstagefright_soft_ddpdec.so|aaaabdc7956db3167a62836e8ccb68ad36b8f46e
-vendor/lib/libstagefright_soft_qtiflacdec.so|15496689ec2c9e025d53e8bce1ae52fd0fe066c4
-vendor/lib/vendor.dolby.hardware.dms@2.0.so|2bf537bbf5c413527e5c648b8e63b95f904f7532
-vendor/lib64/libdapparamstorage.so|573c229a12b95151922c669301b34851444a8004
-vendor/lib64/libdlbdsservice.so|03e42b9d005935b3a605cb3c53afa1c703dc2d75
-vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so|b639857cb1b0a156e5018d5036826ea160cb2eb7
-vendor/lib64/vendor.dolby.hardware.dms@2.0.so|2020b5fd9abac65520224069bbe75d5e76d3f158
 
 # MMI
 vendor/bin/hw/vendor.qti.hardware.factory@1.0-service

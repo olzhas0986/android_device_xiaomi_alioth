@@ -46,8 +46,6 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.audio.ring.filter.mask=0 \
     ro.audio.monitorRotation=true \
     ro.config.vc_call_vol_steps=11 \
-    ro.vendor.audio.dolby.dax.support=true \
-    ro.vendor.audio.dolby.surround.enable=true \
     ro.vendor.audio.enhance.support=false \
     ro.vendor.audio.gain.support=true \
     ro.vendor.audio.karaok.support=true \
@@ -57,8 +55,6 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.audio.soundfx.usb=true \
     ro.vendor.audio.support.sound.id=true \
     ro.vendor.audio.us.proximity=true \
-    vendor.audio.dolby.ds2.enabled=false \
-    vendor.audio.dolby.ds2.hardbypass=false \
     vendor.audio.spkcal.copy.inhal=true \
     vendor.audio.usb.disable.sidetone=true
 
@@ -79,11 +75,9 @@ PRODUCT_ODM_PROPERTIES += \
     vendor.audio_hal.period_multiplier=3
 
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     $(LOCAL_PATH)/configs/audio/mixer_paths_overlay_static.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_overlay_static.xml \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_policy_configuration.xml
-
-PRODUCT_PACKAGES += \
-    XiaomiDolby
 
 # Bluetooth
 PRODUCT_VENDOR_PROPERTIES += \
@@ -246,9 +240,6 @@ PRODUCT_PACKAGES += \
     libcodec2_soft_common.vendor \
     libsfplugin_ccodec_utils.vendor
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml
-
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
@@ -378,10 +369,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor \
     android.hardware.keymaster@4.1.vendor \
     android.hardware.neuralnetworks@1.3.vendor
-
-PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v33/arm/arch-arm-armv7-a-neon/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_foundation-v33.so \
-    prebuilts/vndk/v33/arm64/arch-arm64-armv8-a/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_foundation-v33.so
 
 # VPP tunings
 PRODUCT_COPY_FILES += \
