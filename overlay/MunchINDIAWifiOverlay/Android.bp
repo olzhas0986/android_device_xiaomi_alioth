@@ -1,0 +1,4 @@
+runtime_resource_overlay {
+    name: "MunchINDIAWifiOverlay",
+    device_specific: true
+}

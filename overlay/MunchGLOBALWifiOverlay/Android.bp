@@ -1,0 +1,4 @@
+runtime_resource_overlay {
+    name: "MunchGLOBALWifiOverlay",
+    device_specific: true
+}

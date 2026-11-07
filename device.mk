@@ -57,9 +57,6 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.audio.soundfx.usb=true \
     ro.vendor.audio.support.sound.id=true \
     ro.vendor.audio.us.proximity=true \
-    ro.vendor.audio.us.type=mius \
-    ro.vendor.audio.zoom.support=true \
-    ro.vendor.audio.zoom.type=1 \
     vendor.audio.dolby.ds2.enabled=false \
     vendor.audio.dolby.ds2.hardbypass=false \
     vendor.audio.spkcal.copy.inhal=true \
@@ -68,12 +65,18 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_ODM_PROPERTIES += \
     aaudio.mmap_policy=1 \
     ro.vendor.audio.sdk.fluencetype=fluence \
+    ro.vendor.audio.soundtrigger=sva \
+    ro.vendor.audio.soundtrigger.pangaea=1 \
+    ro.vendor.audio.soundtrigger.sva-5.0=1 \
+    ro.vendor.audio.soundtrigger.xiaomievent=1 \
     vendor.audio.adm.buffering.ms=6 \
     vendor.audio.feature.dynamic_ecns.enable=false \
     vendor.audio.feature.spkr_prot.enable=false \
     vendor.audio.hal.output.suspend.supported=false \
+    vendor.audio.offload.buffer.size.kb=32 \
     vendor.audio.offload.multiple.enabled=true \
-    vendor.audio.offload.track.enable=false
+    vendor.audio.offload.track.enable=false \
+    vendor.audio_hal.period_multiplier=3
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/mixer_paths_overlay_static.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_overlay_static.xml \
@@ -169,13 +172,10 @@ PRODUCT_VENDOR_PROPERTIES += \
     vendor.display.defer_fps_frame_count=2
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    ro.surface_flinger.set_idle_timer_ms=4000 \
-    ro.surface_flinger.set_touch_timer_ms=4000 \
+    ro.surface_flinger.set_idle_timer_ms=1000 \
+    ro.surface_flinger.set_touch_timer_ms=1000 \
     ro.surface_flinger.set_display_power_timer_ms=1000 \
     ro.surface_flinger.use_content_detection_for_refresh_rate=true
-
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/display/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/displayconfig/display_id_4630946736638489729.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946736638489729.xml
@@ -221,12 +221,12 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.alioth.rc \
+    init.munch.rc \
     init.mi.btmac.sh \
     init.mi.usb.sh \
     init.qti.dcvs.sh \
     init.target.rc \
-    ueventd.alioth.rc
+    ueventd.munch.rc
 
 # Keymaster
 PRODUCT_VENDOR_PROPERTIES += \
@@ -260,21 +260,18 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    AliothCarrierConfig \
-    AliothFrameworks \
-    AliothNfc \
-    AliothSettings \
-    AliothSystemUI \
-    AOSPAAliothFrameworks \
-    AOSPAAliothSystemUI \
-    SettingsOverlayM2012K11AG \
-    SettingsOverlayM2012K11AI \
-    SettingsProviderM2012K11AC \
-    SettingsProviderM2012K11AG \
-    SettingsProviderM2012K11AI \
-    WifiOverlayM2012K11AC \
-    WifiOverlayM2012K11AG \
-    WifiOverlayM2012K11AI
+    AOSPAMunchFrameworks \
+    AOSPAMunchSystemUI \
+    MunchCarrierConfig \
+    MunchCNSettingsProviderOverlay \
+    MunchCNWifiOverlay \
+    MunchFrameworks \
+    MunchGLOBALSettingsProviderOverlay \
+    MunchGLOBALWifiOverlay \
+    MunchINDIASettingsProviderOverlay \
+    MunchINDIAWifiOverlay \
+    MunchSettings \
+    MunchSystemUI
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -309,8 +306,6 @@ TARGET_COMMON_QTI_COMPONENTS := \
     usb \
     wfd \
     wlan
-
-TARGET_NFC_SKU := pro
 
 # Sensors
 PRODUCT_VENDOR_PROPERTIES += \
@@ -368,7 +363,7 @@ PRODUCT_PACKAGES += \
     update_verifier
 
 # Vendor
-$(call inherit-product, vendor/xiaomi/alioth/alioth-vendor.mk)
+$(call inherit-product, vendor/xiaomi/munch/munch-vendor.mk)
 
 # Verified Boot
 PRODUCT_COPY_FILES += \
