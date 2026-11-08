@@ -724,12 +724,6 @@ vendor/lib64/libgoodixhwfingerprint.so|dbe53fa2a4ff5712686b3a2997fe761ada255bf3
 vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so|0ae47fd4218b5606f4cf7136b635efb77105ad2f
 vendor/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so|ab271b272f9cf53ca65ab1e457d5cd8ddebc87f7
 
-# HotwordEnrollment - HyperOS
-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk;PRESIGNED|e0c441714989a6b5957e4fc7ceb94838941b82db
-product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk;PRESIGNED|e57a65aa8bb0b769479e05c564e22054faf50a11
-system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|99cfd80965c170f4885a7dd62c0eaad1a0c7840f
-system_ext/framework/com.android.hotwordenrollment.common.util.jar|df689dc9f599fbf0791191a08609642341efb37f
-
 # IMS
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdatadaemon
