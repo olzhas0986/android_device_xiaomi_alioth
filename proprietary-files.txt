@@ -716,8 +716,8 @@ vendor/etc/permissions/com.fingerprints.extension.xml|de711d8827e1d321b22b60fd75
 vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml|49e82d6a43981e254d224dcc93b3ff27e0fb8407
 vendor/etc/vintf/manifest/manifest_fpc.xml|3a6b28e508205b9d41aa660200cb76078841d4bf
 vendor/framework/com.fingerprints.extension.jar|190f8631c968017120110b8765091f7a95c59d4e
-vendor/lib64/hw/fingerprint.goodix.so|5d2237e747417f49386ab08f76741c3211f1895c
 vendor/lib64/hw/fingerprint.fpc.so|59710624feaf1c19ef35f97e6cc9182eea2c9bb8
+vendor/lib64/hw/fingerprint.goodix.so|5d2237e747417f49386ab08f76741c3211f1895c
 vendor/lib64/libgf_ca.so|d2784fe660732ab49dc10249a4585217bb727599
 vendor/lib64/libgf_hal.so|12d5312506651caae9a333bb7d5c76c676bc5cd3
 vendor/lib64/libgoodixhwfingerprint.so|dbe53fa2a4ff5712686b3a2997fe761ada255bf3
