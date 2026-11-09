@@ -515,6 +515,12 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <instance>legacy/0</instance>
         </interface>
     </hal>
+    <!-- Codec2 HAL -->
+    <hal format="hidl">
+        <name>android.hardware.media.c2</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IComponentStore/default</fqname>
+    </hal>
     <!-- FST manager service -->
     <hal format="hidl">
         <name>vendor.qti.hardware.fstman</name>
